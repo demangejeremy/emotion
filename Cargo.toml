@@ -1,7 +1,7 @@
 [package]
 name = "emotion"
 description = "Emotion detection in a text"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jérémy DEMANGE <jeremy@scrapfast.io>"]
 edition = "2018"
 license = "MIT"
@@ -11,3 +11,4 @@ categories = ["algorithms", "science"]
 
 [dependencies]
 whatlang = "0.11.1"
+unicode-segmentation = "1.3.0"
