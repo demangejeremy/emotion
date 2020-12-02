@@ -1,10 +1,15 @@
 extern crate whatlang;
 
-use whatlang::{detect, Lang, Script};
+use whatlang::{detect, Lang};
 
 fn main() {
-    let text = "Bonjour à tous, j'espère que vous allez bien !";
+    let text = "Ĉu vi ne volas eklerni Esperanton?";
     let info = detect(text).unwrap();
-    println!("{}", info.lang());
-    println!("{}", info.confidence());
+    let info = info.lang();
+
+    match info {
+        Lang::Eng => println!("English"),
+        Lang::Fra => println!("French"),
+        _ => println!("Please enter text in English or French."),
+    }
 }
