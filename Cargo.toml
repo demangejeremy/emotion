@@ -1,8 +1,13 @@
 [package]
 name = "emotion"
+description = "Emotion detection in a text"
 version = "0.1.0"
 authors = ["Jérémy DEMANGE <jeremy@scrapfast.io>"]
 edition = "2018"
+license = "MIT"
+repository = "https://github.com/demangejeremy/emotion"
+readme = "README.md"
+categories = ["NLP", "detection", "emotion"]
 
 [dependencies]
 whatlang = "0.11.1"
